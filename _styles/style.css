@@ -21,7 +21,10 @@ width: 100%;
 
 .container{
 	overflow-x: scroll;
-	
+	height:360px;
+  top:50px;
+  position:fixed;
+  width:100%;
 }
 
 .page_profil{
@@ -126,14 +129,13 @@ text-align: center;
 }
 
 .ul-v__li--label:hover{
- background: pink;
+    background: pink;
 }
 
 
 
 .footer,.header{
 	position: fixed;
-	height: 70px;
     background: #bbb;
     clear: both;
     line-height: 50px;
