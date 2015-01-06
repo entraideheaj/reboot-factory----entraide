@@ -17,6 +17,15 @@ html,body{
     background: #eee;
 }
 
+.main__cat{
+ overflow-y:scroll; 
+  height: 450px;
+}
+
+.main__filtre{
+height: 30px;
+background: green;
+}
 
 ul{
 	padding: 0;
@@ -26,6 +35,27 @@ ul{
 
 li{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+.ul-h__li{
+background: blue;
+height: 50px;
+}
+
+.ul-h__li--a{
+display: block;
+color: white;
+line-height: 50px;
+text-align: center;
+}
+
+.ul-h__li:nth-child(odd){
+	background: red;
 }
 
 
@@ -63,12 +93,7 @@ li{
     z-index: 99999999;
 }
 
-.main{
-height:370px;
-width: 310px;
-padding: 5px;
-display: block;
-}
+
 /*.center{
 
 	position: absolute;
