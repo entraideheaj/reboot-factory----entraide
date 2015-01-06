@@ -24,14 +24,15 @@ ul{
 	clear: both;
 }
 
+li{
+	list-style: none;
+}
+
+
 .ul-v__li{
 	
-  list-style: none;
     float: left;
     width: 50%;
-	
-
-
 }
 
 .ul-v__li--label{
