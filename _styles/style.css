@@ -47,10 +47,6 @@ background: orange;
        -o-transition: -o-transform .4s ease-in;
           transition: transform .4s ease-in;
 
-
-
-
-
 }
 
 
@@ -153,24 +149,22 @@ text-align: center;
   height:100%;
   width:50%;
   float:left;
+  position: relative;
 }
-.header__div__a {
-  font-size:30px;
-  width:25%;
-  height:100%;
-  position:absolute;
-}
-.header__div__p {
-  height:100%;
+.header__div__a,.header__div__span  {
+  font-size:25px;
+  line-height: 50px;
   width:50%;
-  position:absolute;
+
 }
+
 
 .header__nav {
   height:100%;
   width:50%;
-  right:0;
-  position:absolute;
+  float: right;
+  position: relative;
+
 }
 .header__nav__ul {
   width:100%;
