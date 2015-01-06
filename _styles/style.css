@@ -78,8 +78,6 @@ text-align: center;
 
 }
 
-
-
 .ul-v__li--label{
 	
 
@@ -99,13 +97,18 @@ text-align: center;
 
 
 .footer,.header{
-	height: 40px;
-    padding: 5px;
+	height: 70px;
     background: #bbb;
     clear: both;
-    line-height: 40px;
+    line-height: 50px;
     font-size: 20px;
     z-index: 99999999;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 
