@@ -112,6 +112,28 @@ text-align: center;
 	width: 100%;
 }
 
+input[type="radio"] {
+	display: none;
+}
+
+#my_group:checked~.cat_a{
+
+	display: none;
+	
+}
+
+#suivis:checked~.cat_b{
+
+	display: none;
+	
+}
+
+#all:checked~.cat{
+
+	display: block;
+	
+}
+
 
 /*.center{
 
