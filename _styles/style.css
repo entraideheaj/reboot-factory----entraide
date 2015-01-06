@@ -7,7 +7,7 @@ html,body{
 }
 
 
-.page_profil,.page_group,.page_search{
+.page_profil,.page_group,{
 position: fixed;
 background: blue;
 top: 50px;
@@ -17,8 +17,8 @@ bottom: 0;
 height: 380px;
 width: 100%;
 z-index:99999999999999;
-
 }
+
 
 .container{
   overflow-y: scroll;
@@ -41,7 +41,14 @@ z-index:99999999999999;
        -o-transition: -o-transform .4s ease-in;
           transition: transform .4s ease-in;
 
-
+position: fixed;
+top: 50px;
+left: 0;
+right: 0;
+bottom: 0;
+height: 380px;
+width: 100%;
+z-index:99999999999999;
 }
 
 .page_profil{
@@ -230,6 +237,17 @@ input {
 	
 }
 
+#searchT:checked~.page_search{
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+       -o-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform .4s ease-in; /* Changed here */ 
+     -moz-transition: -moz-transform .4s ease-in;
+       -o-transition: -o-transform .4s ease-in;
+          transition: transform .4s ease-in;
+}
 
 #group:checked~.page_group,#profil:checked~.page_profil{
 
