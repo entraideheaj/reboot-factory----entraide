@@ -141,8 +141,51 @@ text-align: center;
 .header{
 	height: 50px;
 	width: 100%;
+  background-color:#006666;
+  color:white;
 }
 
+.fa {
+  color:white;
+}
+
+.header__div {
+  height:100%;
+  width:50%;
+  float:left;
+}
+.header__div__a {
+  font-size:30px;
+  width:25%;
+  height:100%;
+  position:absolute;
+}
+.header__div__p {
+  height:100%;
+  width:50%;
+  position:absolute;
+}
+
+.header__nav {
+  height:100%;
+  width:50%;
+  right:0;
+  position:absolute;
+}
+.header__nav__ul {
+  width:100%;
+  height:100%;
+}
+.header__nav__ul__li {
+  width:50%;
+  height:100%;
+  float: left;
+  text-align: center;
+  font-size:30px;
+}
+.header__nav__ul__li__a {
+  position:relative;
+}
 .footer{
 	bottom: 0;
 	width: 100%;
