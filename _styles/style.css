@@ -50,7 +50,7 @@ height: 50px;
 .ul-h__li--a{
 display: block;
 color: white;
-line-height: 50px;
+
 text-align: center;
 }
 
@@ -62,8 +62,23 @@ text-align: center;
 .ul-v__li{
 	
     float: left;
-    width: 50%;
+    
+    
 }
+
+.col-2{
+    width: 50%;
+    line-height: 50px;
+
+}
+
+.col-3{
+    width: 33.33%;
+    line-height: 30px;
+
+}
+
+
 
 .ul-v__li--label{
 	
