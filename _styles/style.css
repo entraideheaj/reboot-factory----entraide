@@ -13,7 +13,7 @@ header{
 	position: relative;
 }
 
-.headeling{
+.center{
 
 	position: absolute;
 	top: 50%;
@@ -25,15 +25,3 @@ header{
 
 
 }
-section{background: pink; position: relative;
-	/*overflow: hidden;*/
-	padding-top: 2%; padding-bottom: 2%;
-}
-.content{
- width: 70%;
- margin: 0 auto;
- position: relative;
- display: block;
-}
-
-section:nth-child(2){background: gray;}
