@@ -7,17 +7,7 @@ html,body{
 }
 
 
-.page_profil,.page_group{
-position: fixed;
-background: blue;
-top: 50px;
-left: 0;
-right: 0;
-bottom: 0;
-height: 380px;
-width: 100%;
-z-index:999999999999999999999;
-}
+
 
 
 .container{
@@ -28,6 +18,54 @@ z-index:999999999999999999999;
   position:fixed;
   width:100%;
 }
+
+.page_profil,.page_group,.page_login{
+position: fixed;
+background: blue;
+top: 50px;
+left: 0;
+right: 0;
+bottom: 0;
+height: 380px;
+width: 100%;
+z-index:999999999999999999999;
+
+}
+
+.page_login{
+  top: 0;
+height: 480px;
+
+}
+.logo__form{
+
+margin-top: 25%;
+}
+
+.form__div{
+  padding: 2.5%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo{
+position: relative;
+padding: 5%;
+}
+.logo__img{
+  display: block;
+  margin: 0 auto;
+}
+
+.logo__small{
+text-align: center;
+width: 100%;
+display: block;
+
+}
+
+
+
 
 .page_search{
   background: red;
@@ -79,6 +117,8 @@ background: orange;
           transition: transform .4s ease-in;
 
 }
+
+
 
 
 .main__filtre{
@@ -215,10 +255,15 @@ text-align: center;
 	width: 100%;
 }
 
-input {
+input[type="checkbox"],input[type="radio"] {
 	display: none;
 }
 
+input[type="submit"]{
+
+  margin: 0 auto;
+  display: block;
+}
 #my_group:checked~.cat_a{
 
 	display: none;
