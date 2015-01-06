@@ -15,9 +15,12 @@ ul{
 .ul-v__li{
 	
 	margin: 0;
+	padding: 0;
+
 	float: left;
 	width: 50%;
-	height: 100%
+	height: 100%;
+	list-style: none;
 
 
 }
