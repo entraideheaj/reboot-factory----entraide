@@ -14,7 +14,7 @@ top: 50px;
 left: 0;
 right: 0;
 bottom: 0;
-height: 360px;
+height: 350px;
 width: 100%;
 z-index:9999999;
 
@@ -22,7 +22,7 @@ z-index:9999999;
 
 .container{
 	overflow-x: scroll;
-	height:360px;
+	height:350px;
   top:50px;
   position:fixed;
   width:100%;
@@ -30,11 +30,11 @@ z-index:9999999;
 
 .page_search{
   background: red;
- -webkit-transform: translateX(-100%);
-     -moz-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-       -o-transform: translateX(-100%);
-          transform: translateX(-100%);
+ -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+       -o-transform: translateY(-100%);
+          transform: translateY(-100%);
   -webkit-transition: -webkit-transform .4s ease-in; /* Changed here */ 
      -moz-transition: -moz-transform .4s ease-in;
        -o-transition: -o-transform .4s ease-in;
