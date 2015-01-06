@@ -7,17 +7,21 @@ html,body{
 }
 
 
-.container,.page_profil,.page_group{
+.page_profil,.page_group{
 position: fixed;
 background: blue;
 top: 50px;
 left: 0;
 right: 0;
 bottom: 0;
-overflow: scroll;
--webkit-overflow-scrolling: touch;
+height: 100%;
+width: 100%;
 
+}
 
+.container{
+	overflow-x: scroll;
+	
 }
 
 .page_profil{
@@ -36,6 +40,9 @@ background: green;
 }
 
 .page_group{
+
+
+
 background: orange;
   -webkit-transform: translateX(100%);
      -moz-transform: translateX(100%);
