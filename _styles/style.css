@@ -1,0 +1,39 @@
+html,body{
+	
+	margin: 0;
+	padding: 0;
+	
+	
+	line-height: 1.2em;
+}
+
+header{
+	background: red;
+	height: 300px;
+	position: relative;
+}
+
+.headeling{
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 60%;
+	background: lightblue;
+	-webkit-transform: translate(-50%, -50%);
+	display: block;
+
+
+}
+section{background: pink; position: relative;
+	/*overflow: hidden;*/
+	padding-top: 2%; padding-bottom: 2%;
+}
+.content{
+ width: 70%;
+ margin: 0 auto;
+ position: relative;
+ display: block;
+}
+
+section:nth-child(2){background: gray;}
