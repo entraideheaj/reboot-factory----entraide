@@ -1,27 +1,27 @@
-$(document).ready(main)
+ $(document).ready(function() {
 
-var cPageState = $("#page");
-var cProfilButton = $(".profilButton");
-var cProfilPage = $(".page_profil");
-var cProfilState = $("#profil");
+var input_group = $('#group');
+var input_profil = $('#profil');
 
-var cGroupState = $("#group");
-var cGroupButton = $(".groupButton");
-var cGroupPage = $(".page_group");
+ var profil = $('#button_profil');
+ var group = $('#button_group');
 
-function main()
-{
-	cGroupButton.click(checkStateGroup);
-	cProfilButton.click(checkStateProfil);
-}
+console.log('test');
 
-function checkStateGroup() 
-{
-	if( cGroupState.is( ':checked' ) )
-	{
-		cGroupPage.css(
-		{
-			"z-index":"9999999"
-		});
-	}
-}
+ profil.click(function(event) {
+
+console.log('testa');
+
+
+            input_group.attr('checked', false);
+
+    });
+
+  group.click(function(event) {
+
+console.log('testb');
+
+            input_profil.attr('checked', false);
+        });
+
+    });
