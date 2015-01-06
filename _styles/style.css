@@ -29,10 +29,17 @@ ul{
 
 
 header{
-
-	background: red;
-	height: 300px;
+	background: #006666;
+	height: 75px;
 	position: relative;
+}
+
+.header__nav {
+    width:50%;
+    height:100%;
+    background-color:#BADA55;
+    right:0;
+    position:absolute;
 }
 
 footer{
