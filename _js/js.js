@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {
 
     //IDs
@@ -48,6 +49,22 @@ $(document).ready(function() {
         page_login.fadeOut();
     });
 });
+=======
+ $(document).ready(function() {
+
+var input_group = $('#group');
+var input_profil = $('#profil');
+var input_search = $('#searchT');
+var input_submit = $('#submit');
+
+ var profil = $('#button_profil');
+ var group = $('#button_group');
+ var search = $('#button_search');
+
+ var page_login = $('.page_login');
+
+ profil.click(function(event) {
+>>>>>>> parent of a70670c... text span
 
 
 //Function that will check the state of page
@@ -58,6 +75,7 @@ function checkState() {
             input_group.attr('checked', false);
             input_profil.attr('checked', false);
             input_search.attr('checked', false);
+<<<<<<< HEAD
             sText.text('Home');
             break;
         case 1: //Profil
@@ -67,9 +85,16 @@ function checkState() {
             sText.text('Profil');
             break;
         case 2: //Group
+=======
+    });
+
+  group.click(function(event) {
+
+>>>>>>> parent of a70670c... text span
             input_profil.attr('checked', false);
             input_group.attr('checked', true);
             input_search.attr('checked', false);
+<<<<<<< HEAD
             sText.text('Groupe');
             break;
         case 3: //Search
@@ -80,3 +105,20 @@ function checkState() {
             break;
     };
 }
+=======
+        });
+
+
+  search.click(function(event) {
+
+            input_profil.attr('checked', false);
+            input_group.attr('checked', false);
+        });
+
+  input_submit.click(function(event) {
+
+    event.preventDefault();
+    page_login.fadeOut();
+  });
+    });
+>>>>>>> parent of a70670c... text span

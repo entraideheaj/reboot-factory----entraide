@@ -33,18 +33,9 @@ z-index:999999999999999999999;
 }
 
 .page_login{
-
   top: 0;
 height: 480px;
 
-}
-.logo__a{
-
-  text-align: center;
-  display: block;
- 
-  padding: 2.5%;
-  background: pink;
 }
 .logo__form{
 
@@ -52,7 +43,7 @@ margin-top: 25%;
 }
 
 .form__div{
-  padding: 5%;
+  padding: 2.5%;
   margin: 0 auto;
   position: relative;
 }
@@ -68,7 +59,7 @@ padding: 5%;
 
 .logo__small{
 text-align: center;
-margin: 0 auto;
+width: 100%;
 display: block;
 
 }
