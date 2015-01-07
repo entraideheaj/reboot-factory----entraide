@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     var page_login = $('.page_login');
 
-    var span =$('span');
+    var span = $('span');
     span.text('Home');
 
     var bSearchState = true;
@@ -32,8 +32,12 @@ $(document).ready(function() {
         }
         else{
             span.text('Home');
-            setToTrue();
+  
             bProfilState = true;
+           
+    bAddState = true;
+    bGroupState = true;
+            bSearchState = true;
 
         }
 
@@ -51,8 +55,12 @@ $(document).ready(function() {
         else{
 
             span.text('Home');
-            setToTrue();
+           
             bGroupState = true;
+
+    bAddState = true;
+    bGroupState = true;
+    bSearchState = true;
 
         }
 
@@ -70,7 +78,11 @@ $(document).ready(function() {
         else{
 
             span.text('Home');
-            setToTrue();
+            
+    
+    bProfilState = true;
+    bAddState = true;
+    bGroupState = true;
             bSearchState = true;
             console.log("bla");
         }
@@ -85,10 +97,4 @@ $(document).ready(function() {
 
 });
 
-function setToTrue()
-{
-    bSearchState = true;
-    bProfilState = true;
-    bAddState = true;
-    bGroupState = true;
-}
+
