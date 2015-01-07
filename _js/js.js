@@ -38,6 +38,7 @@ $(document).ready(function() {
             text.text('Accueil');
             bGroupState = false;
         }
+        
         else {
             input_profil.attr('checked', false);
             input_search.attr('checked', false);
@@ -89,10 +90,7 @@ a.next("div").hide();
 
     });
 
- $('cour').click(function(event){
 
-    
- });
  
 
 });
