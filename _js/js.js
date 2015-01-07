@@ -32,13 +32,8 @@ $(document).ready(function() {
         }
         else{
             text.text('Home');
-  
             bProfilState = true;
-           
-    bAddState = true;
-    bGroupState = true;
-            bSearchState = true;
-
+     
         }
 
     });
@@ -58,9 +53,6 @@ $(document).ready(function() {
            
             bGroupState = true;
 
-    bAddState = true;
-    bGroupState = true;
-    bSearchState = true;
 
         }
 
@@ -81,10 +73,7 @@ $(document).ready(function() {
             
     
     bProfilState = true;
-    bAddState = true;
-    bGroupState = true;
-            bSearchState = true;
-            console.log("bla");
+    
         }
 
     });
@@ -116,8 +105,7 @@ a.next("div").hide();
         }
 
     });
-
-
+ 
 
 });
 
