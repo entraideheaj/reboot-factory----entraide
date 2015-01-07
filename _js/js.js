@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     profil.click(function(event) {
 
-        if (etat == true) {
+        if (bProfilState == true) {
 
 
             input_group.attr('checked', false);
@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     group.click(function(event) {
 
-        if (etat == true) {
+        if (bGroupState == true) {
 
             input_profil.attr('checked', false);
             input_search.attr('checked', false);
@@ -58,7 +58,7 @@ $(document).ready(function() {
 
     search.click(function(event) {
 
-        if (etat == true) {
+        if (bSearchState == true) {
 
             input_profil.attr('checked', false);
             input_group.attr('checked', false);
@@ -78,5 +78,5 @@ $(document).ready(function() {
             page_login.fadeOut();
     });
 
-            
+
 });
