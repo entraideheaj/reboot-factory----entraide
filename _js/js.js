@@ -111,7 +111,6 @@ function animateDown()
             );
         iMoveIndex += 1;
     }
-    console.log(iMoveIndex);
 }
 
 function animateUp()
