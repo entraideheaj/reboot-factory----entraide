@@ -21,7 +21,7 @@ html,body{
 
 
 
-.page_profil,.page_group,.page_login{
+.page_profil,.page_group,.page_login,.list_cour{
 position: fixed;
 background: blue;
 top: 50px;
@@ -30,7 +30,7 @@ right: 0;
 bottom: 0;
 height: 380px;
 width: 100%;
-z-index:999999999999999999999;
+z-index:9999;
 
 }
 
@@ -97,7 +97,7 @@ display: block;
     bottom: 0;
     height: 380px;
     width: 100%;
-    z-index:99999999999999;
+    z-index:9999;
 }
 .page_search p {
     text-align: center;
@@ -215,7 +215,7 @@ text-align: center;
     clear: both;
     line-height: 50px;
     font-size: 20px;
-    z-index: 99999999;
+    z-index: 99;
 }
 
 .header{
@@ -447,4 +447,30 @@ select {
 }
 option {
     text-align: center;
+}
+
+.list_cour{
+top: 0;
+  height: 100%;
+  width: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+display: none;
+  background: pink;
+  
+
+}
+
+#cour:checked~.list_cour{
+  display: block;
+  z-index: 99999999;
+
+
+
+}
+
+.cour{
+  width: 80%;
+ display: block;
+ background: green;
 }
