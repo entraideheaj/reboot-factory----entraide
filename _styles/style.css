@@ -422,6 +422,9 @@ button {
 
 }*/
 
+.page_login {
+    display: none;
+}
 
 .search__year {
     width:250px;
@@ -438,9 +441,15 @@ button {
     background-color:#663399;
     height:100%;
     width:75px;
+    display:table;
 }
 
 .search__arrowUp, .search__arrowDown {
     color:black;
-    display:block;
+    display:table-cell;
+    width:50%;
+    height:100%;
+    float:left;
+    text-align:center;
+    vertical-align:middle;
 }
