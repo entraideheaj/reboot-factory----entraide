@@ -10,71 +10,39 @@ $(document).ready(function() {
     var search = $('#button_search');
 
     var page_login = $('.page_login');
+    var text = $('.header__div__span');
+  
 
-    var text = $('header__div__span');
-    text.text('Home');
-
-    var bSearchState = true;
-    var bProfilState = true;
-    var bAddState = true;
-    var bGroupState = true;
 
 
     profil.click(function(event) {
 
-        if (bProfilState == true) {
-
-
+        
             input_group.attr('checked', false);
             input_search.attr('checked', false);
             text.text('Profil');
-            bProfilState = false;
-        }
-        else{
-            text.text('Home');
-            bProfilState = true;
-     
-        }
-
     });
 
     group.click(function(event) {
 
-        if (bGroupState == true) {
+       
 
             input_profil.attr('checked', false);
             input_search.attr('checked', false);
             text.text('Group');
-            bGroupState = false;
-        }
-        else{
 
-            text.text('Home');
-           
-            bGroupState = true;
-
-
-        }
-
+        
+            
+   
     });
 
     search.click(function(event) {
 
-        if (bSearchState == true) {
-
+        
             input_profil.attr('checked', false);
             input_group.attr('checked', false);
             text.text('Search');
-            bSearchState = false;
-        }
-        else{
 
-            text.text('Home');
-            
-    
-    bProfilState = true;
-    
-        }
 
     });
 
