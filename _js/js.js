@@ -12,40 +12,55 @@ $(document).ready(function() {
     var page_login = $('.page_login');
     var text = $('.header__div__span');
   
-
+    var bProfilState = false;
+    var bGroupState = false;
+    var bSearchState = false;
 
 
     profil.click(function(event) {
 
-        
+        if (bProfilState == true) {
+            text.text('Accueil');
+            bProfilState = false;
+        }
+        else {
             input_group.attr('checked', false);
             input_search.attr('checked', false);
-            text.text('Profil');
+            text.text('Profile');
+            bProfilState = true;
+            bSearchState = false;
+            bGroupState = false;
+        }
     });
 
     group.click(function(event) {
-
-       
-
+        if (bGroupState == true) {
+            text.text('Accueil');
+            bGroupState = false;
+        }
+        else {
             input_profil.attr('checked', false);
             input_search.attr('checked', false);
-            text.text('Group');
-
-        
-            
-   
+            text.text('Groupe');
+            bGroupState = true;
+            bProfilState = false;
+            bSearchState = false;
+        }
     });
-
     search.click(function(event) {
-
-        
+        if (bSearchState == true) {
+            text.text('Accueil');
+            bSearchState = false;
+        }
+        else {
             input_profil.attr('checked', false);
             input_group.attr('checked', false);
-            text.text('Search');
-
-
+            text.text('Recherche');
+            bSearchState = true;
+            bProfilState = false;
+            bGroupState = false;
+        }
     });
-
             input_submit.click(function(event) {
             event.preventDefault();
             page_login.fadeOut();
