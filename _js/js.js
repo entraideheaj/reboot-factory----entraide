@@ -11,17 +11,23 @@ var input_submit = $('#submit');
 
  var page_login = $('.page_login');
 
+ var span =$('span');
+span.text('Home');
+
  profil.click(function(event) {
 
 
             input_group.attr('checked', false);
             input_search.attr('checked', false);
+            span.text('Profil');
     });
 
   group.click(function(event) {
 
             input_profil.attr('checked', false);
             input_search.attr('checked', false);
+            span.text('Group');
+
         });
 
 
@@ -29,6 +35,8 @@ var input_submit = $('#submit');
 
             input_profil.attr('checked', false);
             input_group.attr('checked', false);
+            span.text('Search');
+
         });
 
   input_submit.click(function(event) {
