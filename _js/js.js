@@ -11,9 +11,13 @@ $(document).ready(function() {
 
     var page_login = $('.page_login');
 
-    var etat = true;
     var span =$('span');
     span.text('Home');
+
+    var bSearchState = false;
+    var bProfilState = false;
+    var bAddState = false;
+    var bGroupState = false;
 
 
     profil.click(function(event) {
@@ -24,11 +28,11 @@ $(document).ready(function() {
             input_group.attr('checked', false);
             input_search.attr('checked', false);
             span.text('Profil');
-            etat = false;
+            bProfilState = false;
         }
         else{
             span.text('Home');
-            etat = true;
+            bProfilState = true;
 
         }
 
@@ -41,12 +45,12 @@ $(document).ready(function() {
             input_profil.attr('checked', false);
             input_search.attr('checked', false);
             span.text('Group');
-            etat = false;
+            bGroupState = false;
         }
         else{
 
             span.text('Home');
-            etat = true;
+            bGroupState = true;
 
         }
 
@@ -59,12 +63,12 @@ $(document).ready(function() {
             input_profil.attr('checked', false);
             input_group.attr('checked', false);
             span.text('Search');
-            etat = false;
+            bSearchState = false;
         }
         else{
 
             span.text('Home');
-            etat = true;
+            bSearchState = true;
         }
 
     });
@@ -73,4 +77,6 @@ $(document).ready(function() {
             event.preventDefault();
             page_login.fadeOut();
     });
+
+            
 });
