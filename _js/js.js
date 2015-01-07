@@ -38,7 +38,7 @@ $(document).ready(function() {
             text.text('Accueil');
             bGroupState = false;
         }
-        
+
         else {
             input_profil.attr('checked', false);
             input_search.attr('checked', false);
@@ -90,8 +90,13 @@ a.next("div").hide();
 
     });
 
-
+    $('.type_cour').click(function(event){
+        event.preventDefault();
+        $('#cour').attr('checked', false);
+       var valeur = $(this).find("a").innerHTML;
+        $('.cour').text('choisi'+ valeur);
  
+});
 
 });
 
