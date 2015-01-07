@@ -14,10 +14,10 @@ $(document).ready(function() {
     var span =$('span');
     span.text('Home');
 
-    var bSearchState = false;
-    var bProfilState = false;
-    var bAddState = false;
-    var bGroupState = false;
+    var bSearchState = true;
+    var bProfilState = true;
+    var bAddState = true;
+    var bGroupState = true;
 
 
     profil.click(function(event) {
@@ -32,6 +32,7 @@ $(document).ready(function() {
         }
         else{
             span.text('Home');
+            setToTrue();
             bProfilState = true;
 
         }
@@ -50,6 +51,7 @@ $(document).ready(function() {
         else{
 
             span.text('Home');
+            setToTrue();
             bGroupState = true;
 
         }
@@ -68,7 +70,9 @@ $(document).ready(function() {
         else{
 
             span.text('Home');
+            setToTrue();
             bSearchState = true;
+            console.log("bla");
         }
 
     });
@@ -80,3 +84,11 @@ $(document).ready(function() {
 
 
 });
+
+function setToTrue()
+{
+    bSearchState = true;
+    bProfilState = true;
+    bAddState = true;
+    bGroupState = true;
+}
