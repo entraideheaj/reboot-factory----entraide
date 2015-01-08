@@ -93,9 +93,19 @@ a.next("div").hide();
     $('.type_cour').click(function(event){
         event.preventDefault();
         $('#cour').attr('checked', false);
-       var valeur = $(this).find("a").innerHTML;
-        $('.cour').text('choisi'+ valeur);
+       var valeur = $(this).find("a").html();
+        $('.cour').text(valeur);
+        $('.cat').find("a").text(valeur);
  
+});
+
+    $('.recherche').click(function(event){
+        
+
+        input_search.attr('checked', false);
+
+
+
 });
 
 });

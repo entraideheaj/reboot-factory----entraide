@@ -16,12 +16,12 @@ html,body{
 	height:350px;
   top:50px;
   position:fixed;
-  width:100%;
+  width:320px;
 }
 
 
 
-.page_profil,.page_group,.page_login,.list_cour{
+.page_profil,.page_group,.page_login,.list_cour,.validation{
 position: fixed;
 background: blue;
 top: 50px;
@@ -275,7 +275,7 @@ input[type="checkbox"],input[type="radio"] {
 
 input[type="submit"]{
 
-  margin: 0 auto;
+
   display: block;
 }
 #my_group:checked~.cat_a{
@@ -449,7 +449,7 @@ option {
     text-align: center;
 }
 
-.list_cour{
+.list_cour, .validation{
 top: 0;
   height: 100%;
   width: 100%;
@@ -457,9 +457,10 @@ overflow-y: scroll;
 overflow-x: hidden;
 display: none;
   background: pink;
-  
-
+ 
 }
+
+
 
 #cour:checked~.list_cour{
   display: block;
@@ -480,3 +481,16 @@ display: none;
     line-height: 50px;
 
 }
+
+.recherche{
+  width: 80%;
+  height: 50px;
+ display: block;
+ background: green;
+ margin: 0 auto;
+    margin-top:30px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+
