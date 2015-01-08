@@ -1,78 +1,66 @@
 html,body{
-	
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
 	line-height: 1.2em;
 }
 
-
-
-
-
 .container{
-  overflow-y: scroll;
+    overflow-y: scroll;
 	overflow-x: hidden;
 	height:350px;
-  top:50px;
-  position:fixed;
-  width:320px;
+    top:50px;
+    position:fixed;
+    width:320px;
 }
 
 
 
 .page_profil,.page_group,.page_login,.list_cour,.validation{
-position: fixed;
-background: blue;
-top: 50px;
-left: 0;
-right: 0;
-bottom: 0;
-height: 380px;
-width: 100%;
-z-index:9999;
-
+    position: fixed;
+    background: blue;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 380px;
+    width: 100%;
+    z-index:9999;
 }
 
 .page_login{
-
-  top: 0;
-height: 480px;
-
+    top: 0;
+    height: 480px;
 }
 .logo__a{
-
-  text-align: center;
-  display: block;
- 
-  padding: 2.5%;
-  background: pink;
+    text-align: center;
+    display: block;
+    padding: 2.5%;
+    background: pink;
 }
 .logo__form{
-
-margin-top: 25%;
+    margin-top: 25%;
 }
 
 .form__div{
-  padding: 5%;
-  margin: 0 auto;
-  position: relative;
+    padding: 5%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .logo{
-position: relative;
-padding: 5%;
+    position: relative;
+    padding: 5%;
 }
 .logo__img{
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .logo__small{
-text-align: center;
-margin: 0 auto;
-display: block;
-
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
 
 
@@ -104,7 +92,6 @@ display: block;
 }
 
 .page_profil{
-
 background: green;
   -webkit-transform: translateX(-100%);
      -moz-transform: translateX(-100%);
@@ -115,7 +102,6 @@ background: green;
      -moz-transition: -moz-transform .4s ease-in;
        -o-transition: -o-transform .4s ease-in;
           transition: transform .4s ease-in;
-
 }
 
 .page_group{
@@ -129,15 +115,14 @@ background: orange;
      -moz-transition: -moz-transform .4s ease-in;
        -o-transition: -o-transform .4s ease-in;
           transition: transform .4s ease-in;
-
 }
 
 
 
 
 .main__filtre{
-height: 30px;
-background: green;
+    height: 30px;
+    background: green;
 }
 
 ul{
@@ -156,15 +141,15 @@ a{
 	text-decoration: none;
 }
 .ul-h__li{
-background: blue;
-height: 50px;
+    background: blue;
+    height: 50px;
 }
 
 .ul-h__li--a{
-display: block;
-color: white;
-line-height: 50px;
-text-align: center;
+    display: block;
+    color: white;
+    line-height: 50px;
+    text-align: center;
 }
 
 .ul-h__li:nth-child(odd){
@@ -173,27 +158,20 @@ text-align: center;
 
 
 .ul-v__li{
-	
     float: left;
-    
-    
 }
 
 .col-2{
     width: 50%;
     line-height: 50px;
-
 }
 
 .col-3{
     width: 33.33%;
     line-height: 30px;
-
 }
 
 .ul-v__li--label{
-	
-
     display: block;
     text-decoration: none;
     cursor: pointer;
@@ -221,48 +199,46 @@ text-align: center;
 .header{
 	height: 50px;
 	width: 100%;
-  background-color:#006666;
-  color:white;
+    background-color:#006666;
+    color:white;
 }
 
 .fa {
-  color:white;
+    color:white;
 }
 
 .header__div {
-  height:100%;
-  width:50%;
-  float:left;
-  position: relative;
+    height:100%;
+    width:50%;
+    float:left;
+    position: relative;
 }
 .header__div__a,.header__div__span  {
-  font-size:25px;
-  line-height: 50px;
-  width:50%;
-
+    font-size:25px;
+    line-height: 50px;
+    width:50%;
 }
 
 
 .header__nav {
-  height:100%;
-  width:50%;
-  float: right;
-  position: relative;
-
+    height:100%;
+    width:50%;
+    float: right;
+    position: relative;
 }
 .header__nav__ul {
-  width:100%;
-  height:100%;
+    width:100%;
+    height:100%;
 }
 .header__nav__ul__li {
-  width:50%;
-  height:100%;
-  float: left;
-  text-align: center;
-  font-size:30px;
+    width:50%;
+    height:100%;
+    float: left;
+    text-align: center;
+    font-size:30px;
 }
 .header__nav__ul__li__a {
-  position:relative;
+    position:relative;
 }
 .footer{
 	bottom: 0;
@@ -274,26 +250,18 @@ input[type="checkbox"],input[type="radio"] {
 }
 
 input[type="submit"]{
-
-
-  display: block;
+    display: block;
 }
 #my_group:checked~.cat_a{
-
 	display: none;
-	
 }
 
 #suivis:checked~.cat_b{
-
 	display: none;
-	
 }
 
 #all:checked~.cat{
-
 	display: block;
-	
 }
 
 #searchT:checked~.page_search{
@@ -309,7 +277,6 @@ input[type="submit"]{
 }
 
 #group:checked~.page_group,#profil:checked~.page_profil{
-
   -webkit-transform: translateX(0);
      -moz-transform: translateX(0);
       -ms-transform: translateX(0);
@@ -319,7 +286,6 @@ input[type="submit"]{
      -moz-transition: -moz-transform .4s ease-in .2s;
        -o-transition: -o-transform .4s ease-in .2s;
           transition: transform .4s ease-in .2s;
-
 }
 
 .arrow{
@@ -337,17 +303,16 @@ input[type="submit"]{
 }
 
 .arrow_active{
--webkit-transform: rotate(0deg);
-transition: all .6s;
-
+    -webkit-transform: rotate(0deg);
+    transition: all .6s;
 }
 
 .info{
-  height: 100px;
+    height: 100px;
 }
 
 .a{
-  position: relative;
+    position: relative;
 }
 
 /*select*/
@@ -373,26 +338,24 @@ button {
 }
 
 .arrowUp {
-  width: 0; 
-  height: 0; 
+    width: 0; 
+    height: 0; 
     left:50%;
     margin-left: -7.5px;
     position:absolute;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  
-  border-bottom: 15px solid black;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;  
+    border-bottom: 15px solid black;
 }
 .arrowDown {
-  width: 0; 
-  height: 0; 
+    width: 0; 
+    height: 0; 
     left:50%;
     margin-left: -7.5px;
     position:absolute;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  
-  border-top: 15px solid black;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;  
+    border-top: 15px solid black;
 }
 
 .selectDown {
@@ -450,47 +413,42 @@ option {
 }
 
 .list_cour, .validation{
-top: 0;
-  height: 100%;
-  width: 100%;
-overflow-y: scroll;
-overflow-x: hidden;
-display: none;
-  background: pink;
- 
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+    background: pink;
 }
 
 
 
 #cour:checked~.list_cour{
-  display: block;
-  z-index: 99999999;
-
-
-
+    display: block;
+    z-index: 99999999;
 }
 
 .cour{
-  width: 80%;
-  height: 50px;
- display: block;
- background: green;
- margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    display: block;
+    background: green;
+    margin: 0 auto;
     margin-top:20px;
     text-align: center;
     line-height: 50px;
-
 }
 
 .recherche{
-  width: 80%;
-  height: 50px;
- display: block;
- background: green;
- margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    display: block;
+    background: green;
+    margin: 0 auto;
     margin-top:30px;
     text-align: center;
     line-height: 50px;
-  }
+ }
 
 

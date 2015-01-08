@@ -67,46 +67,46 @@ $(document).ready(function() {
             page_login.fadeOut();
     });
 
-var a = $('.a');
-var arrow = $('.arrow');
+    var a = $('.a');
+    var arrow = $('.arrow');
 
 
-a.next("div").hide();
-    //hide the next div  after the div with the class ascenseur
-
-    a.click(function(event){
-        //if we click on the div with the class ascenseur
-        event.preventDefault()
-        if($(this).next("div").is(":hidden")){
-            //if the next div is hidden 
-            a.next("div:visible").slideUp();
-            //show the next div and anime with a slide up 
-            $(this).next("div").slideDown();
-            //the other div slidedown  
-            $('.arrow_active').toggleClass('arrow_active');
-            $(this).find(".arrow").toggleClass('arrow_active');
-
-        }
-
+    a.next("div").hide();
+        //hide the next div  after the div with the class ascenseur
+    
+        a.click(function(event){
+            //if we click on the div with the class ascenseur
+            event.preventDefault()
+            if($(this).next("div").is(":hidden")){
+                //if the next div is hidden 
+                a.next("div:visible").slideUp();
+                //show the next div and anime with a slide up 
+                $(this).next("div").slideDown();
+                //the other div slidedown  
+                $('.arrow_active').toggleClass('arrow_active');
+                $(this).find(".arrow").toggleClass('arrow_active');
+    
+            }
+    
+        });
+        var valeur;
+        $('.type_cour').click(function(event){
+            event.preventDefault();
+            $('#cour').attr('checked', false);
+           valeur = $(this).find("a").html();
+            $('.cour').text(valeur);
+     
     });
-
-    $('.type_cour').click(function(event){
-        event.preventDefault();
-        $('#cour').attr('checked', false);
-       var valeur = $(this).find("a").html();
-        $('.cour').text(valeur);
-        $('.cat').find("a").text(valeur);
- 
-});
-
-    $('.recherche').click(function(event){
-        
-
-        input_search.attr('checked', false);
-
-
-
-});
+    
+        $('.recherche').click(function(event){
+            
+    
+            input_search.attr('checked', false);
+            $('.cat').find("a").text(valeur);
+    
+    
+    
+    });
 
 });
 
